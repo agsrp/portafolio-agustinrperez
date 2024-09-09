@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/*//////////////////////// HEADER / NAV ////////////////////////*/
+
+.menu-op {
+    max-width: 95vw;
+    margin: 0 auto ;
+    display: flex;
+    align-items: center;
+}
+
+.menu-cont{
+    background-color: #F9E8A8;
+    height: 60px;
+    width: 95vw;
+    margin-top: 35px;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1234;
+}
+
+.logo-nav img{
+    margin-top: 5px;
+    width: 150px;
+    margin-left: 2vw;
+}
+
+.navbar .HTP-nav-btn{
+    color: #fff;
+    font-weight: 600;
+    background-color: #252850;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.navbar{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu-cont .navbar ul li{
+    list-style: none;
+    position: relative;
+    float: left;
+}
+
+.menu-cont .navbar ul li a{
+    font-size: 17px;
+    padding: 20px;
+    color: #252850;
+    display: block;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+#menu-nav{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu-cont label{
+    cursor: pointer;
+    display: none;
+}
+
+
+/*//////////////////////// PANTALLA BIENVENIDA ////////////////////////*/
+
+.bienveCont{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 780px;
+}
+
+.bienveCont .contTextBtn{
+    width: 98%;
+    background-color: #252850;
+    height: 750px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contTextBtn .textBienve h2{
+    font-family: "Dela Gothic One", sans-serif;
+    color: #fff;
+    font-size: 65px;
+}
+
+.contTextBtn .textBienve p{
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 400;
+    color: #fff;
+}
+
+.textBienve{
+    text-align: center;
+}
+
+.contTextBtn .btnBienve{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btnBienve a{
+    text-decoration: none;
+    margin: 05px;
+    padding: 10px 50px;
+    background-color: #F9E8A8;
+    border-radius: 30px;
+    font-family: 'Lato', sans-serif;
+    color: #252850;
+    font-weight: 900;
+}
+
+/*//////////////////////// SECCION DE PROYECTOS DISEÑOS ////////////////////////*/
+
+.proyectosDis-Cont{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    
+}
+
+.proyectosDis-Cont .contProyDisGral {
+    width: 98%;
+    background-color: #252850;
+    height: 98%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.contProyDisGral .contProyArr{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.contProyArr img{
+    border-radius: 10px;
+    width: 25vw;
+    
+}
+
+.tuxDis{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+.socDis{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+.Pupp{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+
+.contProyArr .textArr h3{
+    padding: 10px 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #252850;
+}
+
+.contProyArr .btnArr a{
+    padding: 10px 15px;
+    text-align: center;
+    background-color: #F9E8A8;
+}
+
+.contProyArr .textArr{
+    position: absolute;
+    display: flex;
+}
+
+.contProyArr .btnArr{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    width: 25vw;
+    grid-column: 4/4;
+    grid-row: 4/4;
+}
+
+
+/*//////////////////////// SECCION DE RESPONSIVE ////////////////////////*/
+
+@media (max-width: 768px){
+    .menu-cont{
+        width: 90vw;
+        z-index: 1234;
+        padding: 30px;
+    }
+
+    .menu-cont label{
+        display: initial;
+    }
+
+    .menu-cont .navbar{
+        z-index: 1234;
+        position: absolute;
+        top: 110%;
+        left: 0;
+        right: 0;
+        background-color: #F9E8A8; 
+        border-radius: 15px;
+        display: none;
+        text-align: center;
+        padding-bottom: 30px;
+
+    }
+
+    .menu-cont .navbar ul li{
+        width: 100%;
+    }
+
+    #menu-nav:checked ~ .navbar {
+        display: initial;
+    }
+
+    .contTextBtn .textBienve h2{
+        font-size: 40px;
+    }
+
+    .contTextBtn .textBienve p{
+        font-size: 17px;
+    }
+}
