@@ -15,7 +15,11 @@
             <a href="index.html" class="logo-nav" ><img src="img/AgustinRPerez3.svg" alt=""></a>
             <input type="checkbox" id="menu-nav" />
             <label for="menu-nav">
-                <img src="img/menu.png" class="menu-icono" alt="">
+                <div class="contMenuSpan" onclick="menuspan(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                </div>
             </label>
             <nav class="navbar">
                 <ul>
@@ -139,8 +143,10 @@
                     <h4>CONTACTAME EN MIS REDES</h4>
                 </div>
                 <div class="btnContactoIndex">
-                    <a href="https://www.behance.com/" class="btnIGRedes fa fa-behance" target="_blank"></a>
-                    <a href="https://www.instagram.com/" class="btnIGRedes fa fa-instagram" target="_blank"></a>
+                    <a href="https://www.linkedin.com/" class="	fa fa-linkedin" target="_blank"> </a>
+                    <a href="https://www.behance.com/" class="fa fa-behance" target="_blank"> </a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"> </a>
+                    <a href="agustinreinaldoperez@gmail.com" class="fa fa-envelope" target="_blank"> </a>
                 </div>
             </div>
 
@@ -152,6 +158,11 @@
 
     <script src="js/collapIndex.js"></script>
     <script src="js/slidePupp.js"></script>
+    <script>
+function menuspan(x) {
+  x.classList.toggle("change");
+}
+</script>
     
     
 </body>
