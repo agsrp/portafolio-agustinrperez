@@ -118,6 +118,40 @@
     display: none;
 }
 
+/*//////////////////////// PANTALLA LOADER ////////////////////////*/
+
+.loaderHOME{
+    background-color: #252850;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    clip-path: circle(150% at 50% 50%);
+    transition: clip-path 1.3s ease-in-out;
+}
+
+.loaderHOME2{
+    clip-path: circle(0% at 50% 50%);
+}
+
+.loaderHOME img{
+    width: 250px;
+}
+
+.animate__animated.animate__jackInTheBox{
+    animation-delay: 1.35s;
+}
+
+.animate__animated.animate__pulse{
+    animation-delay: 1.35s;
+}
+
 /*//////////////////////// PANTALLA BIENVENIDA ////////////////////////*/
 
 #botonTOP {
@@ -180,6 +214,10 @@
 
 .textBienve{
     text-align: center;
+}
+
+.textBienve img{
+    width: 150px;
 }
 
 .contTextBtn .btnBienve{

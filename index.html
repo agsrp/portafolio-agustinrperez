@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/agustinCartoon.ico"/>
     <title>Agustin R. Perez</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,13 +39,20 @@
         <button onclick="subirTOP()" id="botonTOP" title="Go to top">&#9650;</button>
 
         <section class="bienveCont">
-            <div class="contTextBtn">
-                <div class="ilusBienve">
 
-                </div>
+            <div class="loaderHOME" id="loader">
+                <img src="img/agustinCartoonW.svg" alt="">
+            </div>
+
+            <div class="contTextBtn">
                 <div class="textBienve">
+                    
+                    <img src="img/agustinCartoonW.svg" alt="" class="animate__animated animate__pulse">
+                    
                     <h2 class="animate__animated animate__jackInTheBox">¡HOLA, BIENVENIDO/A!</h2>
+                    
                     <p>Mi nombre es Agustín, hago diseños, ilustraciones,<br>diseño UX/UI, entre otros. Y este es mi portafolio.</p>
+
                 </div>
                 <div class="btnBienve">
                     <a href="#proyectosDis-Cont" class="explorarBienve">EXPLORAR</a>
@@ -202,6 +210,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/loader.js"></script>
     <script src="js/botonTOP.js"></script>
     <script src="js/collapIndex.js"></script>
     <script src="js/slidePupp.js"></script>
